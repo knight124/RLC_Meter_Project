@@ -1,0 +1,4 @@
+* source RCL_METER
+R_R1         N00118 0  1k TC=0,0 
+V_V1         N00118 0  AC 0
++SIN 0 5 20 0 0 0
