@@ -1,0 +1,15 @@
+* PSpice Model Editor - Version 17.2.0
+*$
+* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* 10Mhz frequency standard, AT cut, series resonant, Q=25000
+.subckt QZS10MEG 1 2
+* 
+lqz	1	11	55.45e-003
+cs	11	12	1.78e-015
+vsin 12 3 SIN 0 1k 16meg 0 1e7 0
+rqz	3	2	20.53
+cp	1	2	0.87e-012
+.ends
+* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* end of library file
+*$
