@@ -25,8 +25,8 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources" "F:\RLC_METER_PROJECT\rcl_meter.dsn")
-      (Path "Design Resources" "F:\RLC_METER_PROJECT\rcl_meter.dsn"
+      (Path "Design Resources" "f:\rlc_meter_project\rcl_meter.dsn")
+      (Path "Design Resources" "f:\rlc_meter_project\rcl_meter.dsn"
          "SCHEMATIC1"))
     (HierarchyView)
     (Doc
@@ -39,12 +39,43 @@
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 52 728 52 511")
         (Scroll "0 0")
-        (Zoom "100")
+        (Zoom "86")
         (Occurrence "/"))
       (Path "F:\RLC_METER_PROJECT\RCL_METER.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "PAGE1")))
+      (Page "CLK_GEN")))
   (PartMRUSelector
+    (74HC157
+      (FullPartName "74HC157.Normal")
+      (LibraryName
+         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\74HC.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-L
+      (LibraryName
+         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName
+         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (74HC73
+      (FullPartName "74HC73.Normal")
+      (LibraryName
+         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\74HC.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-R
+      (LibraryName
+         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (74HC390
+      (FullPartName "74HC390.Normal")
+      (LibraryName
+         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\74HC.OLB")
+      (DeviceIndex "0"))
     (74HC393
       (FullPartName "74HC393.Normal")
       (LibraryName
@@ -59,10 +90,6 @@
       (LibraryName
          "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\PSPICE_ELEM.OLB")
       (DeviceIndex "0"))
-    (PORTRIGHT-R
-      (LibraryName
-         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
     (74HC05
       (FullPartName "74HC05.Normal")
       (LibraryName
@@ -72,10 +99,6 @@
       (FullPartName "C_var.Normal")
       (LibraryName
          "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
-    (VCC_BAR
-      (LibraryName
-         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (C
       (FullPartName "C.Normal")
@@ -91,4 +114,6 @@
       (FullPartName "2N3904.Normal")
       (LibraryName
          "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\TRANSISTOR.OLB")
-      (DeviceIndex "0"))))
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "F:\cadence\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice"))
