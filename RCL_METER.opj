@@ -27,7 +27,9 @@
       (Path "Design Resources")
       (Path "Design Resources" "f:\rlc_meter_project\rcl_meter.dsn")
       (Path "Design Resources" "f:\rlc_meter_project\rcl_meter.dsn"
-         "SCHEMATIC1"))
+         "SCHEMATIC1")
+      (Select "Design Resources" "f:\rlc_meter_project\rcl_meter.dsn"
+         "SCHEMATIC1" "Bandpass and Input stage "))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -39,12 +41,26 @@
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 52 728 52 511")
         (Scroll "0 0")
-        (Zoom "86")
+        (Zoom "87")
         (Occurrence "/"))
       (Path "F:\RLC_METER_PROJECT\RCL_METER.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "CLK_GEN")))
+      (Page "CLK_GEN"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 1714 78 537")
+        (Scroll "-309 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "F:\RLC_METER_PROJECT\RCL_METER.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "Bandpass and Input stage ")))
   (PartMRUSelector
+    (PORTRIGHT-R
+      (LibraryName
+         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
     (74HC157
       (FullPartName "74HC157.Normal")
       (LibraryName
@@ -64,10 +80,6 @@
          "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\74HC.OLB")
       (DeviceIndex "0"))
     (0
-      (LibraryName
-         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    (PORTRIGHT-R
       (LibraryName
          "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
