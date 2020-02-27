@@ -10,10 +10,90 @@
     (BuildFileAddedOrDeleted "x")
     (CompileFileAddedOrDeleted "x")
     (File ".\rcl_meter.dsn"
-      (Type "Schematic Design")))
-  (Folder "Outputs")
+      (Type "Schematic Design"))
+    (PSPICE_Regenerate_Netlist_Flag "TRUE")
+    (RootChangedForceReNetlist "x")
+    ("Create Allegro Netlist" "TRUE")
+    ("Allegro Netlist Directory" "F:\RLC_METER_PROJECT\RCL METER SCH\NETLIST")
+    ("View Allegro Netlist Files" "FALSE")
+    ("Allegro Netlist Create DCF File" "FALSE")
+    ("Update Allegro Board" "TRUE")
+    ("Allegro Netlist Output Board File"
+       "F:\RLC_Meter_Project\RCL Meter SCH\Board\RCL_Meter_rev1.brd")
+    ("Allegro Netlist Remove Etch" "FALSE")
+    ("Allegro Netlist Place Changed Component" "ALWAYS_REPLACE")
+    ("Allegro Netlist Open Board in Allegro" "ALLEGRO")
+    ("Allegro Setup Backup Versions" "3")
+    ("Allegro Setup Output Warnings" "TRUE")
+    ("Allegro Setup Ignore Constraints" "FALSE")
+    ("Allegro Setup Part Type Length" "31")
+    ("Allegro Netlist Combine Property String" "PCB Footprint")
+    ("Allegro Netlist Ignore Fixed Property" "FALSE")
+    ("Allegro Netlist User Defined Property" "FALSE")
+    (Netlist_TAB "0")
+    (BOM_Scope "0")
+    (BOM_Mode "0")
+    (BOM_Report_File "F:\RLC_METER_PROJECT\RCL METER SCH\RCL_METER.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_Header "Item\tQuantity\tReference\tPart")
+    (BOM_Include_File "F:\RLC_METER_PROJECT\RCL METER SCH\RCL_METER.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (Open_BOM_in_Excel "TRUE")
+    (BOM_View_Output "FALSE")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "0")
+    (ANNOTATE_Action "1")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}{POWER_GROUP}")
+    (ANNOTATE_IncludeNonPrimitive "TRUE")
+    (ANNOTATE_PreserveDesignator "FALSE")
+    (ANNOTATE_PreserveUserEdits "FALSE")
+    (ANNOTATE_Refdes_Control_Required "FALSE")
+    (Update_Instace_for_External_Design "FALSE")
+    (Annotate_type "Default")
+    (width_pages "100")
+    (width_start "80")
+    (width_End "80")
+    (FLDSTUFF_Scope "0")
+    (FLDSTUFF_Action "0")
+    (FLDSTUFF_Report_File "f:\rlc_meter_project\rcl meter sch\rcl_meter.RPT")
+    (FLDSTUFF_Update_File "f:\rlc_meter_project\rcl meter sch\rcl_meter.UPD")
+    (FLDSTUFF__Uppercase_Result_Property "FALSE")
+    (FLDSTUFF_Uppercase_Update_Property "FALSE")
+    (FLDSTUFF_Uppercase_Unconditionally "FALSE")
+    (FLDSTUFF_Visibility "0")
+    (FLDSTUFF_inst_or_occurrence "0")
+    (FLDSTUFF_Create_Report_File "FALSE")
+    (GATE_&_PIN_SWAP_Scope "0")
+    (GATE_&_PIN_SWAP_File_Name
+       "F:\RLC_METER_PROJECT\RCL METER SCH\RCL_METER.SWP")
+    (Backannotation_TAB "1")
+    (CrossRef_Scope "0")
+    (Crossref__Mode "0")
+    (CrossRef_Sorting "0")
+    (CrossRef_Destination_File
+       "F:\RLC_METER_PROJECT\RCL METER SCH\RCL_METER.XRF")
+    (Crossref__Outputtype "0")
+    (CrossRef_XY "FALSE")
+    (CrossRef_Unused "FALSE")
+    (XRF_View_Output "FALSE"))
+  (Folder "Outputs"
+    (File ".\rcl_meter-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\rcl_meter.bom"
+      (Type "Report"))
+    (File ".\rcl_meter.xrf"
+      (Type "Report")))
   (Folder "PSpice Resources"
-    (Folder "Simulation Profiles")
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\rcl_meter-pspicefiles\schematic1\n.sim"
+        (DisplayName "SCHEMATIC1-n")
+        (Type "PSpice Profile")))
     (Folder "Stimulus Files")
     (Folder "Include Files")
     (Folder "Model Libraries"))
@@ -22,15 +102,15 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "F:\RLC_Meter_Project\RCL Meter SCH\1\rcl_meter.dsn")
+         "f:\rlc_meter_project\rcl meter sch\rcl_meter.dsn")
       (Path "Design Resources"
-         "F:\RLC_Meter_Project\RCL Meter SCH\1\rcl_meter.dsn" "SCHEMATIC1")
+         "f:\rlc_meter_project\rcl meter sch\rcl_meter.dsn" "SCHEMATIC1")
       (Path "Design Resources" "Library")
       (Path "Design Resources" "Library"
          "f:\orcad projects\lybraries-new\master.olb")
+      (Path "Outputs")
       (Path "PSpice Resources")
-      (Select "Design Resources"
-         "F:\RLC_Meter_Project\RCL Meter SCH\1\rcl_meter.dsn"))
+      (Path "PSpice Resources" "Simulation Profiles"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -38,48 +118,106 @@
         (Placement "44 0 1 -1 -1 -8 -31 0 200 0 416"))
       (Tab 0))
     (Doc
+      (Type "TextFile")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 260 1550 260 825"))
+      (Path "f:\rlc_meter_project\rcl meter sch\rcl_meter.bom")
+      (Scroll "21"))
+    (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 78 1714 78 537")
-        (Scroll "0 185")
-        (Zoom "82")
+        (Placement "44 2 3 -1 -1 -8 -31 156 1446 156 721")
+        (Scroll "279 643")
+        (Zoom "104")
         (Occurrence "/"))
-      (Path "F:\RLC_METER_PROJECT\RCL METER SCH\1\RCL_METER.DSN")
+      (Path "F:\RLC_METER_PROJECT\RCL METER SCH\RCL_METER.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "V and I Mesurment Stage"))
+      (Page "ADC"))
     (Doc
-      (Type "COrPartDoc")
+      (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 156 1498 156 615")
-        (PackageScroll "0 0")
-        (PackageZoom "1")
-        (PartPackage "Part")
-        (Scroll "2478 747")
-        (Zoom "485"))
-      (Path "F:\ORCAD PROJECTS\LYBRARIES-NEW\MASTER.OLB")
-      (Package "DDZ4V7ASF-7")))
+        (Placement "44 0 1 -1 -1 -8 -31 208 1498 208 773")
+        (Scroll "-5 0")
+        (Zoom "81")
+        (Occurrence "/"))
+      (Path "F:\RLC_METER_PROJECT\RCL METER SCH\RCL_METER.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "Bandpass and Injection stage"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 1290 0 565")
+        (Scroll "0 110")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "F:\RLC_METER_PROJECT\RCL METER SCH\RCL_METER.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "CLK_GEN"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 156 1792 156 615")
+        (Scroll "864 798")
+        (Zoom "143")
+        (Occurrence "/"))
+      (Path "F:\RLC_METER_PROJECT\RCL METER SCH\RCL_METER.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "CPU"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 182 1524 182 641")
+        (Scroll "502 670")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "F:\RLC_METER_PROJECT\RCL METER SCH\RCL_METER.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "V and I Mesurment Stage")))
   (PartMRUSelector
-    (PORTRIGHT-L
-      (LibraryName
-         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
     (PORTRIGHT-R
       (LibraryName
          "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName
+         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (74LVC4245/SO
+      (FullPartName "74LVC4245/SO.Normal")
+      (LibraryName
+         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\BUSDRIVERTRANSCEIVER.OLB")
+      (DeviceIndex "0"))
     (0
       (LibraryName
-         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (C
       (FullPartName "C.Normal")
       (LibraryName
          "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
-    (R
-      (FullPartName "R.Normal")
+    (PIC18F97J94-IPT
+      (FullPartName "PIC18F97J94-IPTA.Normal")
+      (LibraryName "F:\ORCAD PROJECTS\LYBRARIES-NEW\2020-02-20_03-42-08.OLB")
+      (DeviceIndex "0"))
+    (PLVA650A/PLP
+      (FullPartName "PLVA650A/PLP.Normal")
       (LibraryName
-         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\PHIL_DIODE.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-L
+      (LibraryName
+         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (lmv331/NS
+      (FullPartName "lmv331/NS.Normal")
+      (LibraryName
+         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\NAT_SEMI.OLB")
       (DeviceIndex "0"))
     (LM2904/NS
       (FullPartName "LM2904/NS.Normal")
@@ -134,10 +272,6 @@
       (LibraryName
          "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\74HC.OLB")
       (DeviceIndex "0"))
-    (VCC_BAR
-      (LibraryName
-         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
     (74HC73
       (FullPartName "74HC73.Normal")
       (LibraryName
@@ -152,26 +286,8 @@
       (FullPartName "74HC393.Normal")
       (LibraryName
          "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\74HC.OLB")
-      (DeviceIndex "0"))
-    (RESISTOR
-      (FullPartName "RESISTOR.Normal")
-      (LibraryName
-         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\PSPICE_ELEM.OLB")
-      (DeviceIndex "0"))
-    (74HC05
-      (FullPartName "74HC05.Normal")
-      (LibraryName
-         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\GATE.OLB")
-      (DeviceIndex "1"))
-    (C_var
-      (FullPartName "C_var.Normal")
-      (LibraryName
-         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
-    (MMBT3904
-      (FullPartName "MMBT3904.Normal")
-      (LibraryName
-         "F:\CADENCE\CADENCE\CADENCE_SPB_17.2-2016\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\BJN.OLB")
       (DeviceIndex "0")))
-  (LastUsedLibraryBrowseDirectory "F:\Orcad projects\Lybraries-NEW")
-  (MPSSessionName "knight"))
+  (LastUsedLibraryBrowseDirectory
+     "F:\cadence\Cadence\Cadence_SPB_17.2-2016\tools\capture\library\pspice")
+  (MPSSessionName "knight")
+  (ISPCBBASICLICENSE "false"))
