@@ -166,16 +166,16 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "f:\rlc_meter_project\rcl meter sch\rcl_meter.dsn")
+         "F:\RLC_Meter_Project\RCL_Meter_SCH\rcl_meter.dsn")
       (Path "Design Resources"
-         "f:\rlc_meter_project\rcl meter sch\rcl_meter.dsn" "SCHEMATIC1")
+         "F:\RLC_Meter_Project\RCL_Meter_SCH\rcl_meter.dsn" "SCHEMATIC1")
       (Path "Design Resources" "Library")
       (Path "Design Resources" "Library"
          "f:\orcad projects\lybraries-new\master.olb")
       (Path "Outputs")
       (Path "PSpice Resources")
       (Select "Design Resources"
-         "f:\rlc_meter_project\rcl meter sch\rcl_meter.dsn"))
+         "F:\RLC_Meter_Project\RCL_Meter_SCH\rcl_meter.dsn" "SCHEMATIC1" "PSU"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -185,63 +185,13 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 800 635 -8 -31 -361 1275 211 670")
-        (Scroll "634 1401")
-        (Zoom "244")
-        (Occurrence "/"))
-      (Path "F:\RLC_METER_PROJECT\RCL METER SCH\RCL_METER.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "CPU"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 2 3 640 635 -8 -31 -178 1458 135 594")
-        (Scroll "845 163")
-        (Zoom "132")
-        (Occurrence "/"))
-      (Path "F:\RLC_METER_PROJECT\RCL METER SCH\RCL_METER.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "PSU"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 480 635 -8 -31 104 1446 104 563")
-        (Scroll "171 80")
-        (Zoom "164")
-        (Occurrence "/"))
-      (Path "F:\RLC_METER_PROJECT\RCL METER SCH\RCL_METER.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "V and I Mesurment Stage"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 320 635 -8 -31 130 1472 130 589")
-        (Scroll "216 144")
+        (Placement "44 2 3 -1 -1 -8 -31 52 1296 52 318")
+        (Scroll "0 170")
         (Zoom "100")
         (Occurrence "/"))
-      (Path "F:\RLC_METER_PROJECT\RCL METER SCH\RCL_METER.DSN")
+      (Path "F:\RLC_METER_PROJECT\RCL_METER_SCH\RCL_METER.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "Bandpass and Injection stage"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 160 639 -8 -31 156 1498 156 615")
-        (Scroll "672 53")
-        (Zoom "130")
-        (Occurrence "/"))
-      (Path "F:\RLC_METER_PROJECT\RCL METER SCH\RCL_METER.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "CLK_GEN"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 0 635 -8 -31 -42 1594 223 682")
-        (Scroll "-309 0")
-        (Zoom "100")
-        (Occurrence "/"))
-      (Path "F:\RLC_METER_PROJECT\RCL METER SCH\RCL_METER.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "ADC")))
+      (Page "PSU")))
   (PartMRUSelector
     (CON6
       (FullPartName "CON6.Normal")
