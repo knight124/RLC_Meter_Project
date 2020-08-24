@@ -354,4 +354,111 @@ F1 "Output_stage.sch" 50
 $EndSheet
 Text HLabel 5050 3900 0    50   Output ~ 0
 DAC_OUT
+$Comp
+L 74HC4053PW_118:74HC4053PW,118 IC?
+U 1 1 5F447F83
+P 8650 5100
+F 0 "IC?" H 9150 5365 50  0000 C CNN
+F 1 "74HC4053PW,118" H 9150 5274 50  0000 C CNN
+F 2 "SOP65P640X110-16N" H 9500 5200 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT4053.pdf" H 9500 5100 50  0001 L CNN
+F 4 "74HC(T)4053 - Triple 2-channel analog multiplexer/demultiplexer@en-us" H 9500 5000 50  0001 L CNN "Description"
+F 5 "1.1" H 9500 4900 50  0001 L CNN "Height"
+F 6 "Nexperia" H 9500 4800 50  0001 L CNN "Manufacturer_Name"
+F 7 "74HC4053PW,118" H 9500 4700 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "74HC4053PW,118" H 9500 4600 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/74hc4053pw118/nexperia" H 9500 4500 50  0001 L CNN "Arrow Price/Stock"
+F 10 "771-74HC4053PW-T" H 9500 4400 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Nexperia/74HC4053PW118?qs=P62ublwmbi9UfOd4c5n7Mw%3D%3D" H 9500 4300 50  0001 L CNN "Mouser Price/Stock"
+	1    8650 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 5100 9850 4800
+$Comp
+L power:+5VA #PWR?
+U 1 1 5F447F8A
+P 9850 4800
+F 0 "#PWR?" H 9850 4650 50  0001 C CNN
+F 1 "+5VA" H 9865 4973 50  0000 C CNN
+F 2 "" H 9850 4800 50  0001 C CNN
+F 3 "" H 9850 4800 50  0001 C CNN
+	1    9850 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 5100 9650 5100
+$Comp
+L power:GND2 #PWR?
+U 1 1 5F447F91
+P 8550 6200
+F 0 "#PWR?" H 8550 5950 50  0001 C CNN
+F 1 "GND2" H 8555 6027 50  0000 C CNN
+F 2 "" H 8550 6200 50  0001 C CNN
+F 3 "" H 8550 6200 50  0001 C CNN
+	1    8550 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 5800 8550 6200
+Wire Wire Line
+	8650 5800 8550 5800
+$Comp
+L power:-5VA #PWR?
+U 1 1 5F447F99
+P 8250 6200
+F 0 "#PWR?" H 8250 6300 50  0001 C CNN
+F 1 "-5VA" H 8265 6373 50  0000 C CNN
+F 2 "" H 8250 6200 50  0001 C CNN
+F 3 "" H 8250 6200 50  0001 C CNN
+	1    8250 6200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8250 6200 8250 5700
+Wire Wire Line
+	8250 5700 8650 5700
+Wire Wire Line
+	8550 5800 8550 5600
+Wire Wire Line
+	8550 5600 8650 5600
+Connection ~ 8550 5800
+Wire Wire Line
+	10550 5400 10550 5100
+$Comp
+L power:+5VA #PWR?
+U 1 1 5F447FA5
+P 10550 5100
+F 0 "#PWR?" H 10550 4950 50  0001 C CNN
+F 1 "+5VA" H 10565 5273 50  0000 C CNN
+F 2 "" H 10550 5100 50  0001 C CNN
+F 3 "" H 10550 5100 50  0001 C CNN
+	1    10550 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND2 #PWR?
+U 1 1 5F447FAB
+P 10550 5600
+F 0 "#PWR?" H 10550 5350 50  0001 C CNN
+F 1 "GND2" H 10555 5427 50  0000 C CNN
+F 2 "" H 10550 5600 50  0001 C CNN
+F 3 "" H 10550 5600 50  0001 C CNN
+	1    10550 5600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 5500 10550 5600
+Text GLabel 9900 5600 2    50   Input ~ 0
+DC_EN
+Wire Wire Line
+	9900 5600 9650 5600
+Text HLabel 9900 5300 2    50   Output ~ 0
+DC_Level_Out
+Wire Wire Line
+	9900 5300 9650 5300
+Wire Wire Line
+	9650 5400 10550 5400
+Wire Wire Line
+	9650 5500 10550 5500
 $EndSCHEMATC
