@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,189 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Amplifier_Operational2:Lm833 U?
+U 2 1 5F448FD2
+P 3750 2600
+AR Path="/5F34DEBF/5F448FD2" Ref="U?"  Part="1" 
+AR Path="/5F471026/5F448FD2" Ref="U?"  Part="2" 
+F 0 "U?" H 3750 1650 50  0000 L CNN
+F 1 "Lm833" H 3750 1550 50  0000 L CNN
+F 2 "" H 3750 2600 50  0001 C CNN
+F 3 "" H 3750 2600 50  0001 C CNN
+	2    3750 2600
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+5VA #PWR?
+U 1 1 5F448FD8
+P 4150 1500
+AR Path="/5F34DEBF/5F448FD8" Ref="#PWR?"  Part="1" 
+AR Path="/5F471026/5F448FD8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4150 1350 50  0001 C CNN
+F 1 "+5VA" H 4165 1673 50  0000 C CNN
+F 2 "" H 4150 1500 50  0001 C CNN
+F 3 "" H 4150 1500 50  0001 C CNN
+	1    4150 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5VA #PWR?
+U 1 1 5F448FDE
+P 4150 2550
+AR Path="/5F34DEBF/5F448FDE" Ref="#PWR?"  Part="1" 
+AR Path="/5F471026/5F448FDE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4150 2650 50  0001 C CNN
+F 1 "-5VA" H 4165 2723 50  0000 C CNN
+F 2 "" H 4150 2550 50  0001 C CNN
+F 3 "" H 4150 2550 50  0001 C CNN
+	1    4150 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4150 2550 4150 2400
+Wire Wire Line
+	4150 1800 4150 1500
+Wire Wire Line
+	3650 2300 3500 2300
+Wire Wire Line
+	3500 2300 3500 3000
+Wire Wire Line
+	4900 3000 4900 2100
+Wire Wire Line
+	4900 2100 4650 2100
+$Comp
+L Device:R R?
+U 1 1 5F44B471
+P 1800 2250
+F 0 "R?" H 1870 2296 50  0000 L CNN
+F 1 "100" H 1870 2205 50  0000 L CNN
+F 2 "" V 1730 2250 50  0001 C CNN
+F 3 "~" H 1800 2250 50  0001 C CNN
+	1    1800 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F44C490
+P 2250 1950
+F 0 "C?" V 1998 1950 50  0000 C CNN
+F 1 "100n" V 2089 1950 50  0000 C CNN
+F 2 "" H 2288 1800 50  0001 C CNN
+F 3 "~" H 2250 1950 50  0001 C CNN
+	1    2250 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 2100 1800 1950
+Wire Wire Line
+	1800 1950 2100 1950
+$Comp
+L Device:R R?
+U 1 1 5F44E142
+P 3100 2250
+F 0 "R?" H 3170 2296 50  0000 L CNN
+F 1 "10M" H 3170 2205 50  0000 L CNN
+F 2 "" V 3030 2250 50  0001 C CNN
+F 3 "~" H 3100 2250 50  0001 C CNN
+	1    3100 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND2 #PWR?
+U 1 1 5F44EA21
+P 3100 2600
+F 0 "#PWR?" H 3100 2350 50  0001 C CNN
+F 1 "GND2" H 3105 2427 50  0000 C CNN
+F 2 "" H 3100 2600 50  0001 C CNN
+F 3 "" H 3100 2600 50  0001 C CNN
+	1    3100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D?
+U 1 1 5F44F33C
+P 2600 2300
+F 0 "D?" V 2554 2380 50  0000 L CNN
+F 1 "1N4148" V 2645 2380 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2600 2125 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2600 2300 50  0001 C CNN
+	1    2600 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 1950 2600 1950
+Wire Wire Line
+	3100 2100 3100 1950
+Connection ~ 3100 1950
+Wire Wire Line
+	3100 1950 3650 1950
+Wire Wire Line
+	3100 2600 3100 2400
+$Comp
+L power:-5VA #PWR?
+U 1 1 5F45230F
+P 2600 2600
+AR Path="/5F34DEBF/5F45230F" Ref="#PWR?"  Part="1" 
+AR Path="/5F471026/5F45230F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2600 2700 50  0001 C CNN
+F 1 "-5VA" H 2615 2773 50  0000 C CNN
+F 2 "" H 2600 2600 50  0001 C CNN
+F 3 "" H 2600 2600 50  0001 C CNN
+	1    2600 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2600 2450 2600 2600
+Wire Wire Line
+	2600 2150 2600 1950
+Connection ~ 2600 1950
+Wire Wire Line
+	2600 1950 3100 1950
+$Comp
+L Diode:1N4148 D?
+U 1 1 5F4539F8
+P 2600 1600
+F 0 "D?" V 2554 1680 50  0000 L CNN
+F 1 "1N4148" V 2645 1680 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2600 1425 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2600 1600 50  0001 C CNN
+	1    2600 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5VA #PWR?
+U 1 1 5F454154
+P 2600 1350
+AR Path="/5F34DEBF/5F454154" Ref="#PWR?"  Part="1" 
+AR Path="/5F471026/5F454154" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2600 1200 50  0001 C CNN
+F 1 "+5VA" H 2615 1523 50  0000 C CNN
+F 2 "" H 2600 1350 50  0001 C CNN
+F 3 "" H 2600 1350 50  0001 C CNN
+	1    2600 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1350 2600 1450
+Wire Wire Line
+	2600 1750 2600 1950
+Text GLabel 1600 1950 0    50   Input ~ 0
+Sense+
+Wire Wire Line
+	1600 1950 1800 1950
+Connection ~ 1800 1950
+Wire Wire Line
+	1600 2500 1800 2500
+Wire Wire Line
+	1800 2500 1800 2400
+Text HLabel 1600 2500 0    50   Input ~ 0
+Drive+
+Wire Wire Line
+	3500 3000 4900 3000
+Text HLabel 5200 2100 2    50   Input ~ 0
+Buffered_Voltage
+Wire Wire Line
+	5200 2100 4900 2100
+Connection ~ 4900 2100
 $EndSCHEMATC
