@@ -463,8 +463,6 @@ U 5F471026
 F0 "IV_Mesurment" 50
 F1 "IV_Mesurment.sch" 50
 $EndSheet
-Text HLabel 9900 5200 2    50   Output ~ 0
-Current_Range_Out
 Wire Wire Line
 	9650 5400 10800 5400
 Wire Wire Line
@@ -483,4 +481,6 @@ Wire Wire Line
 	9900 5700 9650 5700
 Wire Wire Line
 	9650 5500 10950 5500
+Text HLabel 9900 5200 2    50   Output ~ 0
+I_Messurment
 $EndSCHEMATC
