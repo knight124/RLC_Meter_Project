@@ -451,6 +451,15 @@ Text HLabel 9900 5300 2    50   Output ~ 0
 DC_Level_Out
 Wire Wire Line
 	9900 5300 9650 5300
+<<<<<<< HEAD
+=======
+$Sheet
+S 3300 5550 1700 950 
+U 5F471026
+F0 "IV_Mesurment" 50
+F1 "IV_Mesurment.sch" 50
+$EndSheet
+>>>>>>> 4267fb1ec8dbb9fb763d06f94642a7abec16fd86
 Wire Wire Line
 	9650 5400 10800 5400
 Wire Wire Line
@@ -471,6 +480,7 @@ Wire Wire Line
 	9650 5500 10950 5500
 Text HLabel 9900 5200 2    50   Output ~ 0
 I_Messurment
+<<<<<<< HEAD
 $Sheet
 S 1000 6500 2000 1000
 U 5F471026
@@ -489,4 +499,6 @@ Text HLabel 3900 2600 0    50   Input ~ 0
 -VREF
 Text HLabel 3900 3250 0    50   Input ~ 0
 ADC_IN
+=======
+>>>>>>> 4267fb1ec8dbb9fb763d06f94642a7abec16fd86
 $EndSCHEMATC

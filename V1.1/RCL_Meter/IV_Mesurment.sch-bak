@@ -1337,7 +1337,11 @@ Wire Wire Line
 	11000 5050 10400 5050
 Connection ~ 10400 5050
 Text HLabel 15150 4350 2    50   Output ~ 0
+<<<<<<< HEAD
 ADC_IN
+=======
+V_I_Signal_Out
+>>>>>>> 4267fb1ec8dbb9fb763d06f94642a7abec16fd86
 Wire Wire Line
 	15150 4350 14850 4350
 Connection ~ 14850 4350
